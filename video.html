@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+        <title>Video Test</title>
+        <link rel="stylesheet" type="text/css" href="video.css" />
+        <script src="jquery.js"></script>
+        <script src="myvideo.js"></script>
+    </head>
+    <body>
+        <h1>This Is Title</h1>
+        <p>This is a paragraph.</p>
+        <div id="player">
+            <div id="canvasContainer" class="size-video">
+                <canvas id="myCvs" width="640" height="480">Oops! Where is my &lt;canvas&gt;??</canvas>
+            </div>
+            <div id="videoContainer" class="size-video">
+                <video id="myVideo" class="myVideo size-video" controls="controls" preload="auto">
+                    <source src="bbb.webm" type="video/webm" />
+                    <source src="bbb.mp4" type="video/mp4" />
+                    <source src="bbb.ogg" type="video/ogg" />
+                </video>
+            </div>
+            <div id="videoController">
+                <div id="line1" class="controllerLine">
+                    <div id="currentTime" class="time">00:00</div>
+                    <div id="progressBar">Progress bar stuff</div>
+                    <div id="duration" class="time">??:??</div>
+                </div>
+                <div id="line2" class="controllerLine">
+                    <!--input id="playpause" type="button" value="Play/Pause" /-->
+                    <a id="playpause" href="javascript:void(0);">play/pause</a>
+                    <span id="videoStatus">TODO</span>
+                </div>
+            </div>
+        </div>
+        <div class="clear-left"></div>
+        <p>another paragraph</p>
+    </body>
+</html>

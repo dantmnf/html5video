@@ -1,0 +1,61 @@
+/* 
+    Document   : video
+    Created on : 2013-2-14, 12:59:48
+    Author     : dant
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+.myVideo {
+    background-color: black;
+}
+
+#canvasContainer {
+    z-index: 30;
+    position: absolute;
+}
+
+.myVideo > #videoContainer {
+    z-index: 20;
+    
+}
+.size-video {
+    width: 640px;
+    height: 480px;
+}
+#videoController {
+    background-image: linear-gradient(top, #eee, #ddd);
+    background-image: -webkit-linear-gradient(top, #eee, #ddd);
+    background-image: -moz-linear-gradient(top, #eee, #ddd);
+    background-image: -o-linear-gradient(top, #eee, #ddd);
+    width: 640px;
+}
+
+.controllerLine {
+    
+    height: 1em;
+    clear: both;
+}
+
+.controllerLine > * {
+    float: left;
+}
+
+.controllerLine > .time {
+    width: 2.5em;
+}
+
+.controllerLine > #progressBar {
+    width: auto;
+}
+
+.controllerLine > #duration {
+    float: right;
+}
+
+.clear-left {
+    clear: left;
+}
