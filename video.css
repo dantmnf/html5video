@@ -9,6 +9,11 @@
 root { 
     display: block;
 }
+
+#player {
+    height: auto;
+}
+
 .myVideo {
     background-color: black;
 }
@@ -18,7 +23,7 @@ root {
     position: absolute;
 }
 
-.myVideo > #videoContainer {
+#videoContainer {
     z-index: 20;
     
 }
@@ -31,7 +36,7 @@ root {
     background-image: -webkit-linear-gradient(top, #eee, #ddd);
     background-image: -moz-linear-gradient(top, #eee, #ddd);
     background-image: -o-linear-gradient(top, #eee, #ddd);
-    width: 640px;
+    height: auto;
 }
 
 .controllerLine {
