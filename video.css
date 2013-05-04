@@ -12,6 +12,7 @@ root {
 
 #player {
     height: auto;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.7); 
 }
 
 .myVideo {
@@ -31,12 +32,42 @@ root {
     width: 640px;
     height: 480px;
 }
+
 #videoController {
-    background-image: linear-gradient(top, #eee, #ddd);
-    background-image: -webkit-linear-gradient(top, #eee, #ddd);
-    background-image: -moz-linear-gradient(top, #eee, #ddd);
-    background-image: -o-linear-gradient(top, #eee, #ddd);
     height: auto;
+
+}
+
+
+#videoController > * {
+    /* float:left; */
+}
+
+#playpause {
+    font-family: monospace;
+    
+    width: 2em;
+    height: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    color: #444;
+    border-right: solid #888 1px;
+    
+    cursor: default;
+}
+
+#playpause:hover {
+    color: #0af;
+}
+
+#videoStatus {
+    font-size: 8pt;
+    width: 6.25em;
+    text-align: center;
+}
+#comment {
+    border: solid 1px #999;
+    background-image: linear-gradient(to bottom, #fff, #eee);
 }
 
 .controllerLine {
@@ -53,8 +84,19 @@ root {
     width: 2.5em;
 }
 
-.controllerLine > #progressBar {
-    width: auto;
+#progressBar {
+    width: 100%;
+    height: 0.4em;
+    background: #444;
+}
+
+#buttons {
+    width: 100%;
+    height: 2em;
+    background-image: linear-gradient(to bottom, #eee, #ddd);
+    background-image: -webkit-linear-gradient(top, #eee, #ddd);
+    background-image: -moz-linear-gradient(top, #eee, #ddd);
+    background-image: -o-linear-gradient(top, #eee, #ddd);
 }
 
 .controllerLine > #duration {

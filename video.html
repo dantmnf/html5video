@@ -15,23 +15,25 @@
                 <canvas id="myCvs" width="640" height="480">Oops! Where is my &lt;canvas&gt;??</canvas>
             </div>
             <div id="videoContainer" class="size-video">
-                <video id="myVideo" class="myVideo size-video" controls="controls" preload="auto">
+                <video id="myVideo" class="myVideo size-video" preload="auto">
                     <source src="bbb.webm" type="video/webm" />
                     <source src="bbb.mp4" type="video/mp4" />
                     <source src="bbb.ogg" type="video/ogg" />
                 </video>
             </div>
             <div id="videoController" class="size-video">
-                <div id="line1" class="controllerLine">
-                    <div id="currentTime" class="time">00:00</div>
-                    <div id="progressBar">Progress bar stuff</div>
-                    <div id="duration" class="time">??:??</div>
+                <div id="progressBar">
+
                 </div>
-                <div id="line2" class="controllerLine">
+                <table id="buttons">
                     <!--input id="playpause" type="button" value="Play/Pause" /-->
-                    <a id="playpause" href="javascript:void(0);">play/pause</a>
-                    <span id="videoStatus">TODO</span>
-                </div>
+                    <tr>
+                    <td id="playpause">▶</td>
+                    <td id="videoStatus">00:00/??:??</td>
+                    <td><input id="comment" type="text" name="comments" /><input type="button" value="Submit" /></td>
+                    
+                </tr>
+                </table>
             </div>
         </div>
         <div class="clear-left"></div>

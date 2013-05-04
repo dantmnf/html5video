@@ -31,14 +31,18 @@ onReady = function() {
 
 testCanvas = function() {
     var ctx = $("#myCvs")[0].getContext("2d");
-    ctx.shadowBlur = 20;
-    ctx.shadowColor = "green";
+    ctx.shadowBlur = 12;
+    ctx.shadowColor = "rgba(0,0,0,0.4)";
 /*    ctx.moveTo(10, 10);
     ctx.lineTo(150, 50);
     ctx.lineTo(10, 50);
     ctx.stroke();*/
-    ctx.font = "20px Georgia";
-    ctx.fillText("Hello World!", 100, 60);
+    ctx.font = "24pt sans-serif";
+    ctx.fillStyle = "rgba(255,255,255,0.8)";
+    ctx.strokeStyle = "rgba(0,0,0,0.6)";
+    ctx.fillText("这不科学！", 100, 60);
+    ctx.strokeText("这不科学！", 100, 60);
+    
 };
 
 
