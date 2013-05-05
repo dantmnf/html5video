@@ -35,24 +35,26 @@ root {
 
 #videoController {
     height: auto;
-
+    
 }
 
 
 #videoController > * {
     /* float:left; */
+    vertical-align: middle;
+    height: 2em;
 }
 
 #playpause {
     font-family: monospace;
     
     width: 2em;
-    height: 1.5em;
+    height: 2em;
     text-align: center;
     text-decoration: none;
     color: #444;
     border-right: solid #888 1px;
-    
+    vertical-align: middle;
     cursor: default;
 }
 
@@ -65,23 +67,50 @@ root {
     width: 6.25em;
     text-align: center;
 }
-#comment {
+
+#commentBox {
     border: solid 1px #999;
+    border-radius: 2px;
+}
+
+#commentBox > * {
+
+    height: 1.5em;
+    line-height: 1.5em;
     background-image: linear-gradient(to bottom, #fff, #eee);
-}
-
-.controllerLine {
     
-    height: 1em;
-    clear: both;
+    
 }
 
-.controllerLine > * {
+#comment {
+  
+float: left;
+border: none;
+    
+    
+}
+
+#commentStyleBtn {
+    border-right: solid 1px #999;
     float: left;
+    padding: 0 0.2em;
+    cursor: default;
+
 }
 
-.controllerLine > .time {
-    width: 2.5em;
+#sendBtn {
+   float: right;
+   border-left: solid 1px #999;
+   padding: 0 0.2em;
+   cursor: default;
+ 
+}
+
+
+
+.funcBtn {
+    width: 1.2em;
+    padding: 0 0.2em;
 }
 
 #progressBar {
@@ -90,19 +119,24 @@ root {
     background: #444;
 }
 
-#buttons {
+#controls {
     width: 100%;
-    height: 2em;
+
+
     background-image: linear-gradient(to bottom, #eee, #ddd);
     background-image: -webkit-linear-gradient(top, #eee, #ddd);
     background-image: -moz-linear-gradient(top, #eee, #ddd);
     background-image: -o-linear-gradient(top, #eee, #ddd);
+
 }
 
-.controllerLine > #duration {
-    float: right;
+
+#controls > * {
+
 }
 
-.clear-left {
+
+
+.clear-both {
     clear: left;
 }

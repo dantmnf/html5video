@@ -37,7 +37,7 @@ testCanvas = function() {
     ctx.lineTo(150, 50);
     ctx.lineTo(10, 50);
     ctx.stroke();*/
-    ctx.font = "24px sans-serif";
+    ctx.font = "24px FZChaoCuHei-M10";
     ctx.fillStyle = "rgba(255,255,255,0.8)";
     ctx.strokeStyle = "rgba(0,0,0,0.6)";
     ctx.fillText("这不科学！", 100, 60);
