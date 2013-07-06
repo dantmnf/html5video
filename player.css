@@ -6,13 +6,12 @@
         Purpose of the stylesheet follows.
 */
 
-root { 
-    display: block;
+body { 
+    margin: 0;
 }
 
 #player {
     height: auto;
-    box-shadow: 1px 1px 4px rgba(0,0,0,0.7); 
 }
 
 .myVideo {
@@ -29,7 +28,7 @@ root {
     
 }
 .size-video {
-    width: 640px;
+    width: 852px;
     height: 480px;
 }
 
@@ -69,39 +68,38 @@ root {
 }
 
 #commentBox {
+    /*float: left;*/
+    height: 1.5em;
+    /*width: 100%;*/
     border: solid 1px #999;
-    border-radius: 2px;
+    border-radius: 4px;
+    padding: 0 4px;
+    margin-right: 8px;
 }
 
 #commentBox > * {
-
     height: 1.5em;
     line-height: 1.5em;
     background-image: linear-gradient(to bottom, #fff, #eee);
-    
-    
 }
 
 #comment {
-  
-float: left;
 border: none;
-    
-    
+background: none;
+
+height: 90%;
+width: 100%;
+    font-size: 11pt;
 }
 
-#commentStyleBtn {
-    border-right: solid 1px #999;
-    float: left;
-    padding: 0 0.2em;
-    cursor: default;
-
-}
 
 #sendBtn {
+
+   
    float: right;
    border-left: solid 1px #999;
-   padding: 0 0.2em;
+   width: 56px;
+   text-align: center;
    cursor: default;
  
 }
