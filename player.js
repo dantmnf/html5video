@@ -21,11 +21,13 @@ videoPlayer.prototype.togglePlayPause = function () {
 };
 
 onReady = function() {
+    $(".size-video").height(document.height - $("#videoController").height() - 2);
     testCanvas();
     vdo = new videoPlayer("#myVideo");
     $("#playpause").click(function() {
         vdo.togglePlayPause();
     });
+    
 };
 
 
