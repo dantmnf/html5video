@@ -12,12 +12,12 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
+    <script src="jquery.js"></script>
     <title>Html5video by dantmnf</title>
 
   </head>
 
-  <body>
+  <body onload="$('#player').load('player.html').width(640).height(480);">
     <header>
       <div class="inner">
         <h1>Html5video</h1>
@@ -32,7 +32,7 @@
 
 <h3>
 <a name="demo" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Demo</h3>
-<iframe id="player" src="player.html" style="border:none;box-shadow:0 0 3px rgba(0,0,0,0.5);" width="640" height="480"></iframe>
+<iframe id="player" src="player.html" style="border:none;box-shadow:0 0 3px rgba(0,0,0,0.5);" width="640" height="480" seamless="seamless"></iframe>
 
 <p>FIXME: It can only be showed as expected in WebKit.</p>
 
