@@ -12,9 +12,14 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
+    
     <title>Html5video by dantmnf</title>
-
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#playerContainer").attr("srcdoc",null).attr("src","player.html");
+        });
+    </script>
   </head>
 
   <body>
@@ -32,9 +37,9 @@
 
 <h3>
 <a name="demo" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Demo</h3>
-<iframe id="player" src="player.html" style="border:none;box-shadow:0 0 3px rgba(0,0,0,0.5);" width="640" height="480"></iframe>
+            <iframe id="playerContainer" style="border:none;box-shadow:0 0 3px rgba(0,0,0,0.5);width:640px;height:480px;" seamless="seamless" srcdoc="<p>loading...</p>"></iframe>
 
-<p>FIXME: It can only be showed as expected in WebKit.</p>
+<p>FIXME: Not fully displayed in Firefox(22.0).</p>
 
 
 

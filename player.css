@@ -1,10 +1,3 @@
-/* 
-    Document   : video
-    Created on : 2013-2-14, 12:59:48
-    Author     : dant
-    Description:
-        Purpose of the stylesheet follows.
-*/
 
 body { 
     margin: 0;
@@ -39,7 +32,7 @@ body {
 }
 
 #videoController {
-    height: 2.4em;
+    height: calc(2em + 4px);
     width: 100%;
     margin-top: 2.4em;
 }
@@ -120,13 +113,16 @@ body {
 
 #progressBar {
     width: 100%;
-    height: 0.4em;
+    height: 6px;
     background: #444;
+    padding: 0;
+    -webkit-box-sizing: content-box;
 }
 
 #progressCanvas {
+    position: absolute;
     width:  100%;
-    height: 100%;
+    height: 6px;
 }
 
 #controls {
@@ -135,11 +131,13 @@ body {
     margin: 0;
     background-image: linear-gradient(to bottom, #eee, #ddd);
     background-image: -webkit-linear-gradient(top, #eee, #ddd);
+
 }
 
 
-#controls > * {
-
+#controls > tbody {
+    margin: 0;
+    
 }
 
 
