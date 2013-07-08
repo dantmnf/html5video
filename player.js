@@ -21,7 +21,7 @@ videoPlayer.prototype.togglePlayPause = function () {
 };
 
 onReady = function() {
-    $(".size-video").height(document.height - $("#videoController").height() - 2);
+    $(".size-video").height(window.frameElement.height - $("#videoController").height() - $("#progressBar").height());
     testCanvas();
     vdo = new videoPlayer("#myVideo");
     $("#playpause").click(function() {
